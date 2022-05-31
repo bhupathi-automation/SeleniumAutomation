@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="2" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="14119" started-at="2022-01-29T13:05:44Z" finished-at="2022-01-29T13:05:58Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15975490]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="SeleniumAutomationTesting" duration-ms="14119" started-at="2022-01-29T13:05:44Z" finished-at="2022-01-29T13:05:58Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@15975490]" name="setUpClass" is-config="true" duration-ms="364" started-at="2022-01-29T13:05:44Z" finished-at="2022-01-29T13:05:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15975490]" name="runScenario" duration-ms="7609" started-at="2022-01-29T13:05:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-29T13:05:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["sample test scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sample feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at steps.mySteps.userValidates(mySteps.java:50)
+at ✽.user validates(file:///D:/workspace/SeleniumAutomationTesting/src/test/java/features/sampleFeature.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15975490]" name="runScenario" duration-ms="7480" started-at="2022-01-29T13:05:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-29T13:05:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["sample test scenario2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sample feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at steps.mySteps.userValidates(mySteps.java:50)
+at ✽.user validates(file:///D:/workspace/SeleniumAutomationTesting/src/test/java/features/sampleFeature.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15975490]" name="runScenario" duration-ms="6145" started-at="2022-01-29T13:05:52Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-29T13:05:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["sample test scenario2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sample feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at steps.mySteps.userValidates(mySteps.java:50)
+at ✽.user validates(file:///D:/workspace/SeleniumAutomationTesting/src/test/java/features/sampleFeature.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="createHTMLReport()[pri:0, instance:runner.TestRunner@15975490]" name="createHTMLReport" is-config="true" duration-ms="26" started-at="2022-01-29T13:05:58Z" finished-at="2022-01-29T13:05:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createHTMLReport -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@15975490]" name="tearDownClass" is-config="true" duration-ms="73" started-at="2022-01-29T13:05:58Z" finished-at="2022-01-29T13:05:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- SeleniumAutomationTesting -->
+  </suite> <!-- Default Suite -->
+</testng-results>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="SampleTest">
+        <methods>
+          <include name="testMethod"/>
+          <include name="beforeTest"/>
+          <include name="test1"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- SampleTest -->
+      <class name="com.test.heroku.ActionsTest">
+        <methods>
+          <include name="verifyMouseHover"/>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.test.heroku.ActionsTest -->
+      <class name="com.test.heroku.LoginTest">
+        <methods>
+          <include name="loginPageText"/>
+          <include name="loginSuccessValidation"/>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.test.heroku.LoginTest -->
+      <class name="com.test.heroku.BasicAutomationTest">
+        <methods>
+          <include name="verifyDropdownSelection"/>
+          <include name="verifyDropdownValues"/>
+          <include name="verifyKeyPressFromKeyboard"/>
+          <include name="beforeTest"/>
+          <include name="verifyCheckboxSelection"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.test.heroku.BasicAutomationTest -->
+      <class name="com.test.heroku.HomepageTest">
+        <methods>
+          <include name="test1"/>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.test.heroku.HomepageTest -->
+      <class name="com.test.heroku.DataTableTest">
+        <methods>
+          <include name="table1FullDataValidation"/>
+          <include name="beforeTest"/>
+          <include name="table1HeaderValidation"/>
+          <include name="table1DataRowsValidation"/>
+          <include name="dataTableLabelValidation"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.test.heroku.DataTableTest -->
+      <class name="runner.TestRunner">
+        <methods>
+          <include name="runScenario"/>
+          <include name="tearDownClass"/>
+          <include name="createHTMLReport"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- runner.TestRunner -->
+      <class name="com.test.heroku.AlertTest">
+        <methods>
+          <include name="basicAuthAlertTest"/>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.test.heroku.AlertTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

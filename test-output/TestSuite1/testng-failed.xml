@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite1]" parallel="methods">
+  <listeners>
+    <listener class-name="listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="1" name="ChromeTest(failed)" parallel="methods">
+    <parameter name="browser" value="CH"/>
+    <classes>
+      <class name="com.test.heroku.AlertTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="basicAuthAlertTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.test.heroku.AlertTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite1] -->

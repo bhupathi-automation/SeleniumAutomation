@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite1" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="listeners.RetryListener"/>
+    </listeners>
+<!--    <parameter name="browser" value="CH"/>-->
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="CH"/>
+
+        <!--
+        <packages>
+            <package name="com.test.heroku"/>
+        </packages>
+        -->
+
+        <classes>
+            <class name="com.test.heroku.AlertTest"/>
+        </classes>
+
+
+    </test>
+
+
+</suite>

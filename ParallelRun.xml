@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="suite1" parallel="methods" thread-count="1">
+    <!--
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+    -->
+
+    <test name = "TestChrome">
+        <parameter name="browser" value="CH"/>
+        <parameter name="parallel" value="false"/>
+        <parameter name="retry-count" value="1"/>
+
+        <groups>
+            <run>
+                <include name="parallel"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name = "com.test.heroku"/>
+        </packages>
+
+        <classes>
+            <class name="com.test.heroku.HomepageTest"/>
+        </classes>
+
+    </test>
+</suite>
